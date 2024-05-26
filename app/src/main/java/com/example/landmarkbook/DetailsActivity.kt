@@ -17,8 +17,19 @@ class DetailsActivity : AppCompatActivity() {
 
         val selectedItem=intent.getSerializableExtra("landmark") as Landmark
         binding.txtName.text=selectedItem.name
-        binding.txtCountry.text=selectedItem.country
-        binding.txtQuestion3.text=selectedItem.question3
+        binding.image2.setImageResource(selectedItem.image)
+
+        binding.easyBtn.setOnClickListener {
+            binding.questionTxt.text=selectedItem.question_easy
+        }
+
+        binding.mediumBtn.setOnClickListener {
+            binding.questionTxt.text=selectedItem.question_medium
+        }
+
+        binding.hardBtn.setOnClickListener {
+            binding.questionTxt.text=selectedItem.question_hard
+        }
 
     }
 }

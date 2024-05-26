@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         landmarkList= ArrayList<Landmark>()
 
-        val Python=Landmark("Python","Azerbaycan",R.drawable.python_logo,"Niye Burdasan?")
-        val Cplusplus=Landmark("C++","Azerbaycan",R.drawable.c___logo, "Niye Burdasan?")
-        val C_lang=Landmark("C","Azerbaycan",R.drawable.c_logo, "Niye Burdasan?")
-        val Kotlin=Landmark("Kotlin","Azerbaycan",R.drawable.kotlin_logo, "Niye Burdasan?")
+        val Python=Landmark("Python","Azerbaycan",R.drawable.python_logo,"Python hansı sahələrdə istifadə olunur?","Niyə Python digər dillərə nəzərən gec işləyir?","HashMap nədir?")
+        val Cplusplus=Landmark("C++","Azerbaycan",R.drawable.c___logo, "Cənab, sizin başıvızı kim alladıb C++ öyrənməklə?", "List ilə Set-in fərqi","Pointer nədir? Açıq de narahat olma")
+        val C_lang=Landmark("C","Azerbaycan",R.drawable.c_logo, "Niyə programlamaya C dili ilə başlayırlar?", "Class-lar niyə C dilində yoxdu?", "Hansı funksiyalar return oluna bilmir?")
+        val Kotlin=Landmark("Kotlin","Azerbaycan",R.drawable.kotlin_logo, "Data tipləri hansılardır?", "When nə işə baxır?", "Null Safety haqqında məlumat özdə cəld ol!")
         landmarkList.add(Python)
         landmarkList.add(Cplusplus)
         landmarkList.add(C_lang)
